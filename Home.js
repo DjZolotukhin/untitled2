@@ -70,11 +70,74 @@
 // false;
 
 
+
+// - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. Зконкатенувати їх в одну змінну person.
+// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+//     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+
+//
+// let person = {
+//     firstName: 'Соляревич',
+//     middleName: 'Микола',
+//     lastName: 'Марянович'
+//
+// }
+
+// let firstName = 'Соляревич';
+// let middleName = 'Микола';
+// let lastName = 'Марянович';
+// let person = firstName + middleName + lastName;
+// console.log(person);
+
+// let firstName = prompt ('Вітаю твоє імя');
+// let middleName = prompt('По батькові');
+// let lastName = prompt('Твій вік');
+
+// За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+//     let a = 100; let b = '100'; let c = true;
+
+// let a = 100;
+// let b = '100';
+// let c = true;
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(typeof c);
+
+// - Поставет відповідний оператор в виразах що б вийшов відповідний результат.
+//     В однакових виразаї не використовувати однакові оператори!
+//     5 ? 6 -> true
+// 5 ? 6 -> false
+// 5 ? 6 -> false
+// 5 ? 6 -> false
+// 10 ? 10 -> true
+// 10 ? 10 -> true
+// 10 ? 10 -> false
+// 10 ? 10 -> false
+// 10 ? 10 -> false
+// 123 ? '123' -> false
+// 123 ? '123' -> true
+// console.log(5<6);
+// console.log(5>6);
+// console.log(5==6);
+// console.log(5===6);
+// console.log(10=10);
+// console.log(10===10);
+// console.log(10<10);
+// console.log(10>10);
+// console.log(10!=10);
+// console.log(123>'123');
+// console.log(123=='123');
+
+
+
+
+
+
 // ClassWork
 // 1. Оголосіть змінні str, num, flag и txt зі значеннями «Привіт», 123, true, «true».
 // За допомогою typeof переконайтесь, що значення змінних належать типам: string, number и  boolean.
 
-// let str = 'jnvrg';
+// let str = 'Hello';
 // console.log(typeof str);
 //
 // let num=123;
@@ -142,5 +205,38 @@
 // let height=23, width=10;
 // area = (height*width);
 // console.log(area);
-llll
-//ggg
+
+// 5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+//     результат поместите в переменную v.
+
+// let hc=10, dc=4, pi=3.14;
+// v = (hc*dc*pi);
+// console.log(v);
+
+
+// 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+// Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
+
+// let n=3, m=4;
+// k = (Math.sqrt(n**2 + m**2));
+// console.log(k);
+
+// 8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби (каждой на новой строки спомощью \n).
+
+// let name = ('Як вас звати', 'ggughjkb');
+// alert('Ваше імя' + name);
+// let age = 36;
+// alert('Вам' + age);
+// let hobby = 'музика';
+// alert('Ваше хобі' + hobby);
+
+// 9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
+//     Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
+//   Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
+//     Вывести в документ содержимое переменной concatenation спомощью document.write
+
+// let str1 = 'Хто';
+// let str2 = 'ти';
+// let str3 = 'такий';
+// concatenation = str1 + ' ' + str2 + ' ' + str3;
+// document.write(concatenation);
