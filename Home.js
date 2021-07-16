@@ -713,14 +713,15 @@
 //             body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
 //         }
 //     ];
-// document.write(`<div class="users-box">`);
+// document.write(`<div class="a">`);
 // for (const user of users){
-//     document.write(`<div class="user-box">
-// <h3>${user.id} - ${user.title}</h3>
-// <p>${user.body}</p>
+//     document.write(`<div class="b">
+// <h3 class="ha">${user.id} - ${user.title}</h3>
+// <p class="hp">${user.body}</p>
 // </div>`);
 // }
 // document.write(`</div>`);
+
 
 
 // За допомогою циклу вивести всю інформацію про користувачів використовуючи шаблон Template 1.1
@@ -1067,9 +1068,108 @@
 // }
 
 
-// - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+// - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
+// Вивести в консоль всі його елементи в циклі.
+
+// let arr = [];
+// arr[0] = 'hfjd';
+// arr[1] = 456;
+// arr[2] = true;
+// arr[3] = 'rnfjbh';
+// arr[4] = false;
+// arr[5] = 12;
+// arr[6] = 84;
+// arr[7] = 'ji';
+// arr[8] = 'oi';
+// arr[9] = 10;
+// for (let i = 0; i < arr.length; i++ ) {
+//     console.log(arr[i])
+// }
+
+
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+// for (let i = 0; i < 10; i++){
+//     console.log(`step :`, i );
+//     document.write(`step : ${i} <br>`);
+// }
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+// for (let i = 0; i < 100; i++){
+//     console.log(`step :`, i );
+//     document.write(`step : ${i} <br>`);
+// }
+
+
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+
+
+// let step = 0;
+// for (let i= 0; i<100; i++){
+//     console.log(`step :`, step);
+//     document.write(`step : ${step} <br>`);
+//     step+=2;
+// };
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+
+// for (let i= 0; i<100; i++){
+//     if (i%2 === 0){
+//         console.log(`step :`, i);
+//         document.write(`step : ${i} <br>`);
+//     }
+// };
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+
+// for (let i= 0; i<100; i++){
+//     if (i%2 === 1){
+//         console.log(`step :`, i);
+//         document.write(`step : ${i} <br>`);
+//     }
+// };
+
+
+// - Дано 2 масиви з рівною кількістю об'єктів.
+// Масиви:
+//     let usersWithId = [
+//         {id: 1, name: 'vasya', age: 31, status: false},
+//         {id: 2, name: 'petya', age: 30, status: true},
+//         {id: 3, name: 'kolya', age: 29, status: true},
+//         {id: 4, name: 'olya', age: 28, status: false}
+//     ];
+//
+// let citiesWithId = [
+//     {user_id: 3, country: 'USA', city: 'Portland'},
+//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//     {user_id: 2, country: 'Poland', city: 'Krakow'},
+//     {user_id: 4, country: 'USA', city: 'Miami'}
+// ]
+
+
+// З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+//     Записати цей об'єкт в новий масив
+// Example:
+
+// let usersWithCities = [
+//     {
+//         id: 1, // <===
+//         name: 'vasya',
+//         age: 31,
+//         status: false,
+//         address: {
+//             user_id: 1, // <===
+//             country: 'Ukraine',
+//             city: 'Ternopil'
+//         }
+//     },
+//     // TO BE CONTINUED .....
+// ]
+
+
+// for (const user of usersWithId) {
+//     for (const city of citiesWithId) {
+//         if (user.id === city.user_id){
+//             user.address = city;
+//         }
+//     }
+// };
+// console.log(usersWithId);
