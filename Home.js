@@ -83,9 +83,36 @@
 // Взяти файл template_2.html та працювати в ньому
 // 1) Напишіть код, який :
 // a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
+
+// let pMain = document.getElementById('main_header');
+// pMain.innerText = 'june-2021';
+// pMain.style.color = '#999';
+
+
 // b) робить шириниу елементу ul 400px
+
+// let pUl = document.getElementsByTagName('ul')
+// for (let Ul of pUl){
+//     Ul.style.background='red';
+//     Ul.style.width = '400px';
+// }
+
 // c) робить шириниу всіх елементів з класом linkList шириною 50%
+
+// let li = document.getElementsByClassName('linkList')
+// for (let pLi of li){
+//     pLi.style.background = 'green';
+//     pLi.style.width = '50%';
+// }
+
 // d) отримує текст який зберігається в елементі з класом listElement2
+
+// let elem = document.getElementsByClassName('linkList listElement2');
+// for (let lin of elem){
+//     console.log(lin);
+// }
+
+
 // e) отримує всі елементи li та змінює ім колір фону на сірий
 // f) отримує всі елементи 'a' та додає їм клас anchor
 // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
